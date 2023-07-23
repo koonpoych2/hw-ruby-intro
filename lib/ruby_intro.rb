@@ -3,14 +3,12 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
   result = 0
   arr.each { |element| result += element  }
   result
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
   
   # If the array is empty, return zero
   return 0 if arr.empty?
@@ -30,25 +28,36 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  return true if arr.empty? && n.zero?
+  arr.combination(2).any? {|a, b| a + b == n }
 end
 
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+ puts "Hello, %s" %[name]
 end
 
-def starts_with_consonant? s
-  # YOUR CODE HERE
+def starts_with_consonant?(s)
+  # Convert the string to uppercase for case-insensitivity
+  s = s.upcase
+
+  # Check if the string is empty or contains non-alphabetic characters
+  return false if s.empty? || s.match(/\A[^A-Z]/)
+
+  consonants = ["A", "E", "I", "O", "U"]
+
+  # Check if the first character of the string is a consonant
+  return !consonants.include?(s[0])
 end
+
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+
 end
 
 # Part 3
 
 class BookInStock
-# YOUR CODE HERE
+
 end
