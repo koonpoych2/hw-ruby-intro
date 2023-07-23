@@ -4,9 +4,7 @@
 
 def sum arr
   # YOUR CODE HERE
-
-  
-  
+  arr.each {}
 end
 
 def max_2_sum arr
