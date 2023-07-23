@@ -10,19 +10,14 @@ end
 
 def max_2_sum arr
   
-  # If the array is empty, return zero
   return 0 if arr.empty?
 
-  # If the array has only one element, return that element
   return arr[0] if arr.length == 1
 
-  # Sort the array in descending order to get the two largest elements at the beginning
   sorted_arr = arr.sort.reverse
 
-  # Calculate the sum of the two largest elements
   sum_of_two_largest = sorted_arr[0] + sorted_arr[1]
 
-  # Return the sum
   sum_of_two_largest
 
 end
